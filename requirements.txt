@@ -1,0 +1,6 @@
+torch>=1.11
+numpy>=1.21
+scipy>=1.7
+pyvista>=0.37
+scikit-learn>=1.0
+tqdm>=4.60

@@ -6,18 +6,23 @@ This repository provides a full pipeline for point cloud-based vertebral landmar
 
 ## 📁 Repository Structure
 
-├── dataset.py              # Custom PyTorch Dataset class for loading NPZ point clouds
-├── model.py                # PointNet model definitions (segmentation, classification)
-├── trainer.py              # Training script for segmentation using PointNet
-├── preprocessing.py        # Mesh augmentation, landmark labeling, noise addition
-├── folding.py              # Generates train/val/test splits from NPZ files
-├── data/                   # Your structured dataset directory (STLs + NPZ files)
-│   ├── fold_1/
-│   │   ├── train_data.json
-│   │   ├── val_data.json
-│   │   ├── test_data.json
+- dataset.py           # Custom PyTorch Dataset class for loading NPZ point clouds
 
----
+- model.py             # PointNet model definitions (segmentation, classification)
+
+- trainer.py           # Training script for segmentation using PointNet
+
+- preprocessing.py     # Mesh augmentation, landmark labeling, noise addition
+
+- folding.py           # Generates train/val/test splits from NPZ files
+
+- data/                # Your structured dataset directory (STLs + NPZ files)
+  - fold_1/ 
+    - train_data.json
+    - val_data.json
+    - test_data.json
+
+
 
 ## 🧰 Requirements
 
@@ -79,7 +84,7 @@ Each .npz file contains:
 📈 Output
 
 After training:
-	•	Model checkpoints saved to seg_noisy/
+	•	Model checkpoints saved to checkpoints/
 	•	Training/test accuracy printed per epoch
 	•	Final mIoU score reported at end
 

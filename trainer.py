@@ -18,7 +18,7 @@ def main():
         '--workers', type=int, help='number of data loading workers', default=4)
     parser.add_argument(
         '--nepoch', type=int, default=100, help='number of epochs to train for')
-    parser.add_argument('--outf', type=str, default='seg_noisy', help='output folder')
+    parser.add_argument('--outf', type=str, default='checkpoints', help='output folder')
     parser.add_argument('--model', type=str, default='', help='model path')
     parser.add_argument('--dataset', type=str, default=r"C:\Users\zzmasa\PycharmProjects\SurgPlanner\data\planning_orig\pedicle_dataset_noisy", help="dataset path")
     parser.add_argument('--class_choice', type=str, default='spine', help="class_choice")
